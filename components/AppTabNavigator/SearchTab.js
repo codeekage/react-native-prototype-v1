@@ -2,14 +2,10 @@ import * as React from 'react';
 import { Text, View} from 'react-native';
 import {Icon} from 'native-base';
 import style from "../src/style";
+import { createStackNavigator }  from 'react-navigation'
 
 
-export default class SearchTab extends React.Component {  
-   static navigationOptions = {
-    tabBarIcon: ({tintColor}) => (
-      <Icon name="ios-search-outline" style={{ color : tintColor}} />
-    )
-  }
+class SearchTab extends React.Component {  
   render() {
     return (
        <View style={style.container}>
@@ -18,3 +14,7 @@ export default class SearchTab extends React.Component {
     );
   }
 }
+
+export default SearchTab = createStackNavigator({
+    Search: SearchTab
+})

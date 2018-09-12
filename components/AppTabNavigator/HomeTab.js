@@ -1,15 +1,9 @@
 import * as React from 'react';
 import CardComponent from '../Home/CardComponent';
 import {Container, Content, Icon} from 'native-base';
+import { createStackNavigator }  from 'react-navigation'
 
-
-
-export default class HomeTab extends React.Component {  
-   static navigationOptions = {
-    tabBarIcon: ({tintColor}) => (
-      <Icon name="ios-home" style={{ color : tintColor}} />
-    )
-  }
+class HomeTab extends React.Component {  
   render() {
     return (
       <Container>
@@ -22,3 +16,8 @@ export default class HomeTab extends React.Component {
     );
   }
 }
+
+
+export default HomeTab = createStackNavigator({
+    Home : HomeTab
+})

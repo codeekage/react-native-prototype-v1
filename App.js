@@ -6,13 +6,10 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <AppStack/>
+      <MainScreen/>
     );
   }
 }
 
-const AppStack = createSwitchNavigator({
-  Main: MainScreen
-})
 
 

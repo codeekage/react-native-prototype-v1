@@ -2,16 +2,12 @@ import * as React from 'react';
 import { Text, View } from 'react-native';
 import {Icon} from 'native-base';
 import  style  from "../src/style";
+import { createStackNavigator }  from 'react-navigation'
+import HomeTab from './HomeTab';
 
 
-export default class ProfileTab extends React.Component { 
-  
-   static navigationOptions = {
-    tabBarIcon: ({tintColor}) => (
-      <Icon name="person" style={{ color : tintColor}} />
-    )
-  }
-  
+
+class ProfileTab extends React.Component { 
   render() {
     return (
        <View style={style.container}>
@@ -20,3 +16,7 @@ export default class ProfileTab extends React.Component {
     );
   }
 }
+
+export default ProfileTab = createStackNavigator({
+  Profile: ProfileTab
+})

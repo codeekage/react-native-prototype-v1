@@ -2,16 +2,9 @@ import * as React from 'react';
 import { Text, View} from 'react-native';
 import {Icon} from 'native-base';
 import style from '../src/style'
+import { createStackNavigator }  from 'react-navigation'
 
-export default class AddMediaTab extends React.Component {
-
- static navigationOptions = {
-    tabBarIcon: ({tintColor}) => (
-      <Icon name="ios-add-circle-outline" style={{ color : tintColor}} />
-    ),
-    title: "Add"
-  }
-
+class AddMediaTab extends React.Component {
   render() {
     return (
       <View style={style.container}>
@@ -23,3 +16,7 @@ export default class AddMediaTab extends React.Component {
     );
   }
 }
+
+export default AddMediaTab = createStackNavigator({
+    AddMediaTab: AddMediaTab
+})
