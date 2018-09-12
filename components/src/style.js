@@ -8,4 +8,14 @@ export default style = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+    navContainer : {
+        display : 'flex',
+        flexDirection: 'row',
+        alignItems: "center"
+    },
+    navContainerText: {
+        padding : 10,
+        textAlign: 'center'
+    }
+
 });

@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { Text, View } from 'react-native';
-import {Icon} from 'native-base';
+import {Icon, Container} from 'native-base';
 import  style  from "../src/style";
 import { createStackNavigator }  from 'react-navigation'
 import HomeTab from './HomeTab';
+import NavigationCard from '../Profile/Navigation';
 
 
 
@@ -15,9 +16,9 @@ class ProfileTab extends React.Component {
 
   render() {
     return (
-       <View style={style.container}>
-         <Text>Hello I'm Profile</Text>
-       </View>
+     <Container>
+       <NavigationCard/>
+     </Container>
     );
   }
 }
