@@ -14,7 +14,7 @@ import {
 export default class CardComponent extends React.Component {
   render() {
     return (
-      <Card>
+      <Card transparent>
         <CardItem>
           <Left>
             < Thumbnail source = {

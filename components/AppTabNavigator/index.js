@@ -52,7 +52,7 @@ export default bottomNavigator = createBottomTabNavigator({
   tabBarOptions: {
     activeTintColor: "#000",
     inactiveTintColor: "gray",
-    showLabel: true,
+    showLabel: false,
     showIcon: true
   }
 })
