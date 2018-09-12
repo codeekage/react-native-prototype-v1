@@ -5,6 +5,11 @@ import style from '../src/style'
 import { createStackNavigator }  from 'react-navigation'
 
 class AddMediaTab extends React.Component {
+
+  static navigationOptions = {
+    title: "Add Media"
+  }
+
   render() {
     return (
       <View style={style.container}>

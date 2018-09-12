@@ -4,6 +4,11 @@ import {Container, Content, Icon} from 'native-base';
 import { createStackNavigator }  from 'react-navigation'
 
 class HomeTab extends React.Component {  
+
+  static navigationOptions = {
+    title : "Home"
+  }
+
   render() {
     return (
       <Container>

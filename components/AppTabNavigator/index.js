@@ -8,18 +8,17 @@ import { createBottomTabNavigator } from "react-navigation";
 import {Icon} from 'native-base';
 
 export default bottomNavigator = createBottomTabNavigator({
-  HomeTab: {
+  Home: {
     screen : HomeTab,
     navigationOptions : () => ({
       tabBarIcon: ({tintColor}) => (
-        <Icon name="ios-search-outline" style={{ color : tintColor}} />
+        <Icon name="ios-home-outline" style={{ color : tintColor}} />
        )
     })
   },
  Search: {
         screen: SearchTab,
         navigationOptions: () => ({
-            title: "Home",
             tabBarIcon: ({tintColor}) => (
                 <Icon name="ios-search-outline" style={{ color : tintColor}} />
             )
@@ -28,7 +27,6 @@ export default bottomNavigator = createBottomTabNavigator({
   AddMedia: {
         screen: AddMediaTab,
         navigationOptions: () => ({
-            title: "AddMedia",
             tabBarIcon: ({tintColor}) => (
                 <Icon name="ios-add-circle-outline" style={{ color : tintColor}} />
             )
@@ -37,7 +35,6 @@ export default bottomNavigator = createBottomTabNavigator({
   Interest: {
         screen: InterestTab,
         navigationOptions: () => ({
-            title: "Interest",
             tabBarIcon: ({tintColor}) => (
                 <Icon name="ios-heart" style={{ color : tintColor}} />
             )
@@ -46,7 +43,6 @@ export default bottomNavigator = createBottomTabNavigator({
    Profile: {
     screen: ProfileTab,
     navigationOptions: () => ({
-      title: "Profile",
       tabBarIcon: ({tintColor}) => (
         <Icon name="ios-contact-outline" style={{ color : tintColor}} />
       )

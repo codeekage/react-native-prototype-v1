@@ -8,6 +8,11 @@ import HomeTab from './HomeTab';
 
 
 class ProfileTab extends React.Component { 
+
+  static navigationOptions = {
+    title: "Profile"
+  }
+
   render() {
     return (
        <View style={style.container}>

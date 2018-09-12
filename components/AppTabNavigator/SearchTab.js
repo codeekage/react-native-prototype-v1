@@ -6,6 +6,11 @@ import { createStackNavigator }  from 'react-navigation'
 
 
 class SearchTab extends React.Component {  
+
+  static navigationOptions = {
+    title: "Search"
+  }
+
   render() {
     return (
        <View style={style.container}>

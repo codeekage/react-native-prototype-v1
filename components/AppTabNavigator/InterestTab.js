@@ -5,6 +5,11 @@ import  style  from "../src/style";
 import { createStackNavigator }  from 'react-navigation'
 
 class InterestTab extends React.Component { 
+
+  static navigationOptions = {
+    title: "Interest"
+  }
+
   render() {
     return (
        <View style={style.container}>
