@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Text, View } from 'react-native';
-import {Icon, Container} from 'native-base';
+import {Icon, Container, Content} from 'native-base';
 import  style  from "../src/style";
 import { createStackNavigator }  from 'react-navigation'
 import HomeTab from './HomeTab';
@@ -17,7 +17,9 @@ class ProfileTab extends React.Component {
   render() {
     return (
      <Container>
+       <Content>
        <NavigationCard/>
+       </Content>
      </Container>
     );
   }

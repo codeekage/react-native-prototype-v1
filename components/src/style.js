@@ -11,11 +11,20 @@ export default style = StyleSheet.create({
     navContainer : {
         display : 'flex',
         flexDirection: 'row',
-        alignItems: "center"
+        alignItems: "center",
+        justifyContent: "center",
+        marginTop: "-15%"
     },
     navContainerText: {
         padding : 10,
-        textAlign: 'center'
+        textAlign: 'center',
+        margin: 10
+    },
+    navContainerButton: {
+        justifyContent: "center",
+        marginTop: "-15%",
+        backgroundColor: "transparent"
     }
+   
 
 });
